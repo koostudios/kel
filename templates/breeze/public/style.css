@@ -1,0 +1,83 @@
+body {
+	background: #FFF;
+	max-width: 800px;
+	margin: 20px auto;
+	padding: 20px;
+	font-family: "Helvetica Neue", Sans;
+	-webkit-font-smoothing: antialiased;
+	color: #888;
+}
+
+a {
+	color: #327CCB;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+table {
+	margin: 1em 0;
+}
+
+table td {
+	padding-right: 10px;
+	font-size: 0.9em;
+}
+
+header {
+	position: relative;	
+	margin-bottom: 20px;
+}
+
+header h1 {
+	display: inline;
+	font-family: "Gill Sans", Sans;
+	font-size: 3em;
+	color: #327CCB;
+}
+
+header nav {
+	position: absolute;
+	top: 10px;
+	right: 0;
+	display: block;
+	margin-top: 10px;
+	max-width: 800px;
+}
+
+header nav a {
+	margin-left: 25px;	
+}
+
+header a {
+	text-decoration: none;
+}
+
+header a:hover {
+	color: #333;	
+}
+
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content h6 {
+	font-family: "Gill Sans", Sans;
+	font-weight: normal;
+	color: #333;
+	margin: 2px;
+}
+
+.content p {
+	margin: 1em 0 1.5em;
+}
+
+footer {
+	border-top: 1px solid #CCC;
+	margin-top: 3em;
+	padding: 5px 0;
+	font-size: 0.8em;
+	color: #AAA;
+}
