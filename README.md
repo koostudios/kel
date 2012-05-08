@@ -2,7 +2,7 @@
 
 Kel is a ridculously simple markdown file-based website system. It is super easy to setup, simple as anything and as flexible as you can make it.
 
-**Latest Version:** 0.1.0
+**Latest Version:** 0.1.1
 
 ## Features
 
@@ -12,9 +12,9 @@ Kel is a ridculously simple markdown file-based website system. It is super easy
 
 ## Installation
 
-1. [Download](https://github.com/koostudios/kel/zipball/master) the files or `git clone git@github.com:koostudios/kel.git`
-2. Install the dependencies using `npm install`. You may also have to install the dependencies depending on your template. For example, I used the jade engine for my template and installed jade through `npm install`
-3. Run using `node server`
+1. [Download](https://github.com/koostudios/kel/zipball/master) the files or `git clone git@github.com:koostudios/kel.git`.
+2. Install the dependencies using `npm install`. You may also have to install the dependencies depending on your template like this: `npm install jade`.
+3. Run using `node server`.
 
 ## License
 Copyright (c) 2012 Alexander Yuen <koo.studios@gmail.com>
