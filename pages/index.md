@@ -16,7 +16,7 @@ Ever wanted to create a simple, static website but didn't want to do all the wor
 		</td>
 		<td width=33%>
 			<h3>You're In Control</h3>
-			<p>No more struggling to make a CMS do what you want. Write your own content and your own template in your own language.</p>
+			<p>No more struggling to make a CMS do what you want. Write your own content and template in your own language.</p>
 		</td>
 	</tr>
 </table>

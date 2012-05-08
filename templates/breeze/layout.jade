@@ -9,10 +9,9 @@ html(lang= 'en')
 		header
 			a(href= '/')
 				h1= config.title
-			nav
-				a(href= 'https://github.com/koostudios/kel/master/')= 'Download'
-				a(href= 'https://github.com/koostudios/kel')= 'Github'
-				a(href= '/about')= 'About'
+			nav 
+				!= snippet('menu')
 		.content
 			!= body
-		footer &copy; 2012 #{config.author}. Made with ♥ and Kel.
+		footer 
+			!=snippet('footer')
