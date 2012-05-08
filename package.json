@@ -13,6 +13,7 @@
 	"node": "0.6.12",
 	"main": "server.js",
 	"dependencies": {
+	  "jade" : "0.25.0",
 		"coffee-script" : "1.2.x",
 		"express"       : "2.5.x",
 		"node-markdown"  : "0.1.x"
