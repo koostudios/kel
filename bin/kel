@@ -17,21 +17,18 @@ if (argv.v) return console.log('v'+ require('../package.json').version);
 // Non flag arguments or those without the "-" in front
 if (argv._.length) {
   if (argv._[0] == "generate") {
-    kel.generate();
-  } else if (argv._[0] == "preview") {
-    kel.preview();
+    kel.generate(argv._);
   } else {
     kel.init(argv._);
   }
 } else {
   // Print out usage details if there are no arguments
   console.log([
-              'usage: kel [-v] <command>',
-              '',
-              'commands:',
-              'kel <folder>: Creates a new kel site',
-              'kel generate: Generates a static kel site into /public',
-              'kel preview: Serves your static kel site on http://locahost:8080'
-            ].join('\n'));
+    'usage: kel [-v] <command>',
+    '',
+    'commands:',
+    'kel <path>: Creates a new kel site',
+    'kel generate <path>: Generates a static kel site into the public folder'
+  ].join('\n'));
 }
 
