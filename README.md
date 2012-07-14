@@ -1,20 +1,27 @@
 # Kel
 
-Kel is a ridculously simple markdown file-based website system. It is super easy to setup, simple as anything and as flexible as you can make it.
+Kel is a ridculously simple markdown static site generation system. It is super easy to setup, simple as anything and as flexible as you can make it.
 
-**Latest Version:** 0.1.1
+**Latest Version:** 0.2.0
 
 ## Features
 
-- **Easy setup:** Copy files to server and then run `node server`
-- **Simple Editing:** Every markdown file under the `/pages` folders is a page. Create or edit the markdown file and you're done.
-- **Flexible Theming:** Write your own themes and styles. Just leave a variable for `body`.
+- **Easy setup:** Install Kel through npm, edit some files and generate your site
+- **Simple Editing:** Every markdown file under the `/pages` folders is a page and every file under the `/posts` folder is a blog post. Create or edit the markdown file and you're done.
+- **Flexible Theming:** Write your own themes and styles and let Kel do the work.
 
-## Installation
+## Quick Start Guide
 
-1. [Download](https://github.com/koostudios/kel/zipball/master) the files or `git clone git@github.com:koostudios/kel.git`.
-2. Install the dependencies using `npm install`. You may also have to install the dependencies depending on your template like this: `npm install jade`.
-3. Run using `node server`.
+1. [Download](http://nodejs.org/#download) and install the latest version of Node.js. It's super simple!
+2. Install Kel by running `npm install kel`. If you can run `kel -v` without any problems, you've got it installed. 
+3. Start a site by running `kel <site name>`, where site name is your new website name.
+4. Edit the markdown files and theme files that are created and `kel generate` creates the static files immediately.
+
+For further information on Kel, check out the ever-expanding [Kel wiki](https://github.com/koostudios/kel/wiki).
+
+## Contributing
+
+Have you made some cool hacks to Kel? Use a pull request to let us know of some cool feature or bug fix that you've made! We accept patches as long as they’re useful and conform to our standards. If you want to join the project as a contributor, please contact me with an [email](mailto:koostudios@gmail.com) or via my twitter handle [@koostudios](http://www.koostudios.com). Everyone is welcome!
 
 ## License
 Copyright (c) 2012 Alexander Yuen <koo.studios@gmail.com>
