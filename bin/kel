@@ -1,0 +1,34 @@
+#!/usr/bin/env node
+
+/*
+ * Project: Kel
+ * Description: This bash file acts as a router for command line arguments.
+ * It activates specific kel functions based on these arguments.
+ *
+ */
+
+// Requires and variables
+var argv = require('optimist').argv,
+    kel = require('../lib/kel.js');
+
+// Display version number from package.json file
+if (argv.v) return console.log('v'+ require('../package.json').version);
+
+// Non flag arguments or those without the "-" in front
+if (argv._.length) {
+  if (argv._[0] == "generate") {
+    kel.generate(argv._);
+  } else {
+    kel.init(argv._);
+  }
+} else {
+  // Print out usage details if there are no arguments
+  console.log([
+    'usage: kel [-v] <command>',
+    '',
+    'commands:',
+    'kel <path>: Creates a new kel site',
+    'kel generate <path>: Generates a static kel site into the public folder'
+  ].join('\n'));
+}
+

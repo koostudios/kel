@@ -1,21 +1,28 @@
 {
-	"name": "Kel",
-	"description": "Kel is a ridculously simple markdown file-based website system.",
-	"tags": ["cms", "content management", "markdown", "file-based"],
-	"version": "0.1.0",
+	"name": "kel",
+	"description": "Kel is a ridculously simple blog-aware markdown static site generator.",
+	"tags": ["cms", "content management", "markdown", "file-based", "static site generator"],
+	"version": "0.2.0",
 	"homepage": "https://github.com/koostudios/kel",
 	"author": "Alexander Yuen <koo.studios@gmail.com> (http://www.koostudios.com)",
+  "bin": {
+    "kel": "bin/kel"
+  },
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/koostudios/kel.git"
 	},
 	"bugs": "https://github.com/koostudios/kel/issues",
-	"node": "0.6.12",
-	"main": "server.js",
+  "engines": {
+	  "node": ">= 0.6.x"
+  },
 	"dependencies": {
-		"coffee-script" : "1.2.x",
-		"express"       : "2.5.x",
-		"node-markdown"  : "0.1.x"
+    "async"         : "0.1.x",
+    "jade"          : "0.26.x",
+		"node-markdown" : "0.1.x",
+    "optimist"      : "0.3.x",
+    "mkdirp"        : "0.3.x",
+    "js-yaml"       : "1.0.x"
 	},
 	"license": "MIT"
 }
